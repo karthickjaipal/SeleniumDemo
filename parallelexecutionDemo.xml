@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="TestNGFrameworkDemo" parallel="Tests">
+  <test name="LoginwithChrome">
+  <parameter name="browser" value="chrome"></parameter>
+  <classes>
+      <class name="testngDemo.ConsumingPropertyFile"/>
+    </classes>
+  </test> 
+  <test name="LoginwithFirefox">
+  <parameter name="browser" value="firefox"></parameter>
+  <classes>
+      <class name="testngDemo.ConsumingPropertyFile"/>
+    </classes>
+  </test>
+  <test name="LoginwithIE">
+  <parameter name="browser" value="IE"></parameter>
+  <classes>
+      <class name="testngDemo.ConsumingPropertyFile"/>
+    </classes>
+  </test>
+  <!-- Test -->
+</suite> <!-- Suite -->
